@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item Details</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    {% if name == "var_name" %}
+    <h1>Welcome {{ name }} to our demo page. Change 'var_name' in the url to see your name </h1>
+    {% else %}
+    <h1>Welcome {{ name }} to our demo page </h1>
+    {% endif %}
+</body>
+</html>
